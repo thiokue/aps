@@ -19,7 +19,7 @@ header {
 }
 
 nav {
-  background-color: #283618;
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 1px;
   text-align: center;
 }
@@ -27,16 +27,16 @@ nav {
 nav a {
   display: inline-block;
   margin: 0 10px;
-  color: #fefae0;
+  color: #283618;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 4px;
+  border-radius: 2vh;
   padding: 3px 8px;
 }
 
 nav a:hover {
-  background-color: #fefae0;
-  color: #606c38;
+  background-color: #283618;
+  color: #fefae0;
 }
 
 .blog-posts {
@@ -58,7 +58,7 @@ nav a:hover {
   width: auto;
   max-width: 50%;
   box-shadow: 0 0.4rem 0.8rem #0005;
-  border-radius: 0.8rem;
+  border-radius: 2vh;
 }
 
 .post .post-image {
@@ -67,6 +67,7 @@ nav a:hover {
   border-radius: 10%;
   box-shadow: 1px #0005;
   border: 1.5px solid;
+  border-radius: 2vh;
 }
 
 .left {
@@ -74,7 +75,7 @@ nav a:hover {
 }
 
 .post h2 {
-  background-color: #606c38;
+
   color: #fefae0;
   margin-top: 2%;
   text-align: center;
@@ -109,7 +110,7 @@ nav a:hover {
   color: #fefae0;
   padding: 5px 10px;
   text-decoration: none;
-  border-radius: 10%;
+  border-radius: 1vh;
 }
 
 .read-more a:hover {
@@ -140,9 +141,14 @@ nav a:hover {
   border: 1px solid #fefae0;
 }
 
+#post-4 {
+  text-align: center;
+  max-width: fit-content;
+}
+
 .btn a {
   display: inline-block;
-  background-color: #333;
+  background-color: #283618;
   color: #fefae0;
   padding: 5px 10px;
   text-decoration: none;
@@ -154,27 +160,32 @@ nav a:hover {
   color: #606c38;
 }
 
+.dropdown {
+  position: relative;
+  text-align: center;
+}
+
 /* Style the dropdown button */
 .dropdown-btn {
   background-color: #4caf50;
   color: white;
   padding: 16px;
   font-size: 16px;
+  border-radius: 2vh;
   border: none;
   cursor: pointer;
-  margin-left: 27%;
+  text-align: center;
 }
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
-  display: none;
   position: inherit;
+  display: none;
   z-index: 1;
   margin-top: 10px;
   left: 0;
   right: 0;
-  max-width: fit-content;
-  margin-left: 35%;
+  text-align: center;
 }
 
 /* Show the dropdown content when the dropdown button is clicked */
@@ -184,25 +195,36 @@ nav a:hover {
 }
 
 .dropdown-content a {
-  display: block;
+  max-width: inherit;
+  display: inline-block;
   padding: 10px;
-  background-color: #606c38;
+  background-color: #4caf50;
   color: black;
   text-decoration: none;
   text-align: center;
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+  color: #ccc;
 }
 
 /* Style the content */
 .content {
   display: none;
   padding: 20px;
-  border: 1px solid #ccc;
-  margin-top: 20px;
   position: relative;
-  z-index: 2;
 }
 
 /* Show the selected content */
 .content.active {
   display: block;
+}
+
+
+.map {
+  max-width: 100%;
+  box-shadow: 10px black;
+  border-radius: 2vh;
 }
